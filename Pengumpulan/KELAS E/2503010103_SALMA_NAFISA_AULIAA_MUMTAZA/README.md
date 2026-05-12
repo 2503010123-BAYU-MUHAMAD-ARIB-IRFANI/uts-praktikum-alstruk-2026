@@ -1,4 +1,4 @@
-NIM   : 2503010053
+NIM   : 2503010103
 Nama  : Salma Nafisa Auliaa Mumtaza
 Kelas : E
 
@@ -14,3 +14,4 @@ Simulasi antrian kasir supermarket menggunakan Stack dan Queue.
 
 Sumber Belajar:
 - Video pembelajaran C++ di YouTube
+- Video pembelajaran GitHub di Youtube
