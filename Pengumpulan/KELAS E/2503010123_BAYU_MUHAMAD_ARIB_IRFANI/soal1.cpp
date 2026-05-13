@@ -26,9 +26,17 @@ int main() {
     do {
         cout << "\nMasukkan jumlah buku (1-5): ";
         cin >> jumlahBuku;
-        
-
-    } while (jumlahBuku < 1 || jumlahBuku > 5);
+             do {
+         cout << "\nMasukkan jumlah buku (1-5): ";
+         cin >> jumlahBuku;
+				 
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(10000, '\n');
+            jumlahBuku = 0;
+            cout << "Input tidak valid! Masukkan angka 1-5." << endl;
+        }
+     } while (jumlahBuku < 1 || jumlahBuku > 5);
     
 
     cout << "\n========== INPUT DATA BUKU ==========" << endl;
