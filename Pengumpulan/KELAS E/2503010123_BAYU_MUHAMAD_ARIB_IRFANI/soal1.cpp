@@ -22,11 +22,7 @@ int main() {
 	garis();
     cout << "   PROGRAM MANAJEMEN DATA BUKU TOKO BUKU   " << endl;
     garis();
-
-    do {
-        cout << "\nMasukkan jumlah buku (1-5): ";
-        cin >> jumlahBuku;
-             do {
+	do {
          cout << "\nMasukkan jumlah buku (1-5): ";
          cin >> jumlahBuku;
 				 
