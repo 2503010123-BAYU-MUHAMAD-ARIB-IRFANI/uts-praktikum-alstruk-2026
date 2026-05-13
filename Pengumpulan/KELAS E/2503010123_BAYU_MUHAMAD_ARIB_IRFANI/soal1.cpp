@@ -40,18 +40,18 @@ int main() {
     
 
     cout << "\n========== INPUT DATA BUKU ==========" << endl;
-    for (int i = 0; i < jumlahBuku; i++) {
-        cout << "\nBuku ke-" << (i + 1) << ":" << endl;
-        cout << "Judul       : ";
-        cin >> daftarBuku[i].judul;
-        cout << "Pengarang   : ";
-        cin >> daftarBuku[i].pengarang;
-        cout << "Tahun Terbit: ";
-        cin >> daftarBuku[i].tahunTerbit;
-        cout << "Harga       : Rp ";
-        cin >> daftarBuku[i].harga;
-    }
-    
+     for (int i = 0; i < jumlahBuku; i++) {
+         cout << "\nBuku ke-" << (i + 1) << ":" << endl;
+         cout << "Judul       : ";
+         cin.ignore();
+         getline(cin, daftarBuku[i].judul);
+         cout << "Pengarang   : ";
+         getline(cin, daftarBuku[i].pengarang);
+         cout << "Tahun Terbit: ";
+         cin >> daftarBuku[i].tahunTerbit;
+         cout << "Harga       : Rp ";
+         cin >> daftarBuku[i].harga;
+     }
 
     cout << "\n\n========== DAFTAR SELURUH BUKU ==========" << endl;
     cout << "No\tJudul\t\tPengarang\tTahun\tHarga" << endl;
